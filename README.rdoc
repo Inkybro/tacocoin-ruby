@@ -1,6 +1,6 @@
-== dogecoin-ruby
+== tacocoin-ruby
 
-Provides a Ruby library to the complete Dogecoin JSON-RPC API. 
+Provides a Ruby library to the complete Tacocoin JSON-RPC API. 
 
 == Installation
 
@@ -12,23 +12,23 @@ On Ruby 1.9, you can just install the gem and start using it. On 1.8, the 'json'
 
 As with most Ruby gems, you first need to require the library into your project:
 
-  require 'dogecoin'
+  require 'tacocoin'
 
 After doing this, the simplest possible usage looks like this:
 
-  Dogecoin('username', 'password').balance
+  Tacocoin('username', 'password').balance
   # => 0.001
 
 Or, if you prefer a somewhat more explicit representation, the following code performs the exact
 same task:
 
-  client = Dogecoin::Client.new('username', 'password')
+  client = Tacocoin::Client.new('username', 'password')
   client.balance
   # => 0.001
   
 The third and final way to use the library is by taking advantage of a simple DSL:
 
-  include Dogecoin
+  include Tacocoin
   
   # set up credentials
   username 'username'
@@ -45,8 +45,8 @@ The third and final way to use the library is by taking advantage of a simple DS
 Here are several examples of how you can change the host information:
 
   
-  Dogecoin('username', 'password', :host => 'example.com', :port => 22555, :ssl => true)
-  client = Dogecoin::Client.new('username', 'password', :host => 'example.com')
+  Tacocoin('username', 'password', :host => 'example.com', :port => 22555, :ssl => true)
+  client = Tacocoin::Client.new('username', 'password', :host => 'example.com')
   client.port = 22555
   port 22555
   ssl?
@@ -55,7 +55,7 @@ Here are several examples of how you can change the host information:
   ssl?
   # => true
 
-You should see the Dogecoin::Client class documentation if you'd like to see the other options and methods
+You should see the Tacocoin::Client class documentation if you'd like to see the other options and methods
 that are made available.
 
 
@@ -63,9 +63,9 @@ that are made available.
 
 If you found this library useful and feel inclined to compensate me for my trouble, I'm certainly not going to turn you down!
 
-Dogecoin donations can be sent to:
+Tacocoin donations can be sent to:
 
-  DNjbbUqsNipNkPeoEit5maYryxAJdLCWz8
+  LfqunbGDov12S1MeSSFAwiSB8GN256PqGw
 
 Thanks!
 
